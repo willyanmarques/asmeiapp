@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="../../../src/images/icon512_maskable.png" />
+
+    <link rel="manifest" href="../../../manifest.json" />
+    <!-- ios support -->
+    <link rel="apple-touch-icon" href="../../../src/images/icon512_maskable.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#1c0c7a" />
+    <meta name="theme-color" content="#1c0c7a" />
+
+    <link rel="stylesheet" href="../../../global.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <title>Meu Diário</title>
+</head>
+
+<body>
+
+    <header>
+        <div class='container'>
+            <h2>Meu Controle</h2>
+        </div>
+    </header>
+    <article id="welcome-page">
+        <p>
+            Bem-vindo(a) à sessão ACT - Teste de Controle da Asma!
+            <br>
+            <br>
+            O ACT é uma ferramenta que ajuda você a entender como está o controle da sua asma e a identificar o que pode
+            ser melhorado no seu dia a dia.
+            <br>
+            <br>
+            O teste é simples e baseado em perguntas que avaliam como os sintomas têm afetado sua rotina nas últimas
+            semanas.
+            <br>
+            <br>
+            Aqui, você pode marcar a opção que melhor reflete a sua situação atual.
+            <br>
+            <br>
+            Então, responda com atenção, veja as recomendações e, se precisar, procure seu médico para ajustar seu
+            tratamento e tirar dúvidas. Estamos juntos nessa jornada para respirar melhor e viver plenamente!
+
+        </p>
+        <div class="welcome-card-button">
+            <button class="start-button" onclick="startTest()">Iniciar avaliação</button>
+        </div>
+    </article>
+    <article id="question-page">
+        
+        <div class="question-card">
+            <h4>A asma prejudicou suas atividades no trabalho, na escola ou em casa?</h4>
+            <br>
+            <label class="label-container">Nenhuma vez
+                <input type="radio" checked="checked" value="5" name="question1">
+                <span class="checkmark"></span>
+              </label>
+              <label class="label-container">Poucas vezes
+                <input type="radio" value="4" name="question1">
+                <span class="checkmark"></span>
+              </label>
+              <label class="label-container">Algumas vezes
+                <input type="radio" value="3" name="question1">
+                <span class="checkmark"></span>
+              </label>
+              <label class="label-container">Maioria das vezes
+                <input type="radio" value="2" name="question1">
+                <span class="checkmark"></span>
+              </label>
+              <label class="label-container">Todo o tempo
+                <input type="radio" value="1" name="question1">
+                <span class="checkmark"></span>
+              </label>
+        </div>
+
+        <div class="question-card">
+            <h4>Como está o controle da sua asma?</h4>
+            <br>
+            <label class="label-container">Totalmente descontrolada
+                <input type="radio" checked="checked" value="5" name="question2">
+                <span class="checkmark"></span>
+              </label>
+              <label class="label-container">Pobremente controlada
+                <input type="radio"value="4" name="question2">
+                <span class="checkmark"></span>
+              </label>
+              <label class="label-container">Um pouco controlada
+                <input type="radio" value="3" name="question2">
+                <span class="checkmark"></span>
+              </label>
+              <label class="label-container">Bem controlada
+                <input type="radio" value="2" name="question2">
+                <span class="checkmark"></span>
+              </label>
+              <label class="label-container">Completamente controlada
+                <input type="radio" value="1" name="question2">
+                <span class="checkmark"></span>
+              </label>
+        </div>
+
+        <div class="question-card">
+            <h4>Quantas vezes você teve falta de ar?</h4>
+            <br>
+            <label class="label-container">De jeito nenhum
+                <input type="radio" checked="checked" value="5" name="question3">
+                <span class="checkmark"></span>
+              </label>
+              <label class="label-container">Uma ou duas vezes por semana
+                <input type="radio"value="4" name="question3">
+                <span class="checkmark"></span>
+              </label>
+              <label class="label-container">Três a seis vezes por semana
+                <input type="radio" value="3" name="question3">
+                <span class="checkmark"></span>
+              </label>
+              <label class="label-container">Uma vez ao dia
+                <input type="radio" value="2" name="question3">
+                <span class="checkmark"></span>
+              </label>
+              <label class="label-container">Mais que uma vez ao dia
+                <input type="radio" value="1" name="question3">
+                <span class="checkmark"></span>
+              </label>
+        </div>
+
+        <div class="question-card">
+            <h4>A asma acordou você à noite ou mais cedo que de costume?</h4>
+            <br>
+            <label class="label-container">De jeito nenhum
+                <input type="radio" checked="checked" value="5" name="question4">
+                <span class="checkmark"></span>
+              </label>
+              <label class="label-container">Uma ou duas vezes
+                <input type="radio"value="4" name="question4">
+                <span class="checkmark"></span>
+              </label>
+              <label class="label-container">Uma vez por semana
+                <input type="radio" value="3" name="question4">
+                <span class="checkmark"></span>
+              </label>
+              <label class="label-container">Duas ou três noites por semana
+                <input type="radio" value="2" name="question4">
+                <span class="checkmark"></span>
+              </label>
+              <label class="label-container">Quatro ou mais noites por semana
+                <input type="radio" value="1" name="question4">
+                <span class="checkmark"></span>
+              </label>
+        </div>
+
+        <div class="question-card">
+            <h4>Quantas vezes você usou o remédio por inalação para alívio?</h4>
+            <br>
+            <label class="label-container">De jeito nenhum
+                <input type="radio" checked="checked" value="5" name="question5">
+                <span class="checkmark"></span>
+              </label>
+              <label class="label-container">Uma vez por semana ou menos
+                <input type="radio"value="4" name="question5">
+                <span class="checkmark"></span>
+              </label>
+              <label class="label-container">Poucas vezes por semana
+                <input type="radio" value="3" name="question5">
+                <span class="checkmark"></span>
+              </label>
+              <label class="label-container">Uma ou duas vezes por dia
+                <input type="radio" value="2" name="question5">
+                <span class="checkmark"></span>
+              </label>
+              <label class="label-container">Três ou mais vezes por dia
+                <input type="radio" value="1" name="question5">
+                <span class="checkmark"></span>
+              </label>
+        </div>
+
+        <div class="question-card-button">
+            <button class="button">Enviar formulário</button>
+        </div>
+    </article>
+
+    <article class="voltar-container"></article>
+
+    <!-- The Modal -->
+    <div id="appModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-btn-close">&times;</span>
+                <!-- <h2>Modal Header</h2> -->
+            </div>
+            <div class="modal-body">
+                <!-- dynamic content -->
+
+            </div>
+            <div class="modal-footer">
+                <!-- <h3>Modal Footer</h3> -->
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+<script src="index.js"></script>
+
+</html>

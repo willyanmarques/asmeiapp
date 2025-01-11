@@ -1,0 +1,27 @@
+{
+    "theme_color": "#1c0c7a",
+    "background_color": "#ffffff",
+    "icons": [
+        {
+            "purpose": "maskable",
+            "sizes": "512x512",
+            "src": "src/images/icon512_maskable.png",
+            "type": "image/png"
+        },
+        {
+            "purpose": "any",
+            "sizes": "512x512",
+            "src": "src/images/icon512_rounded.png",
+            "type": "image/png"
+        }
+    ],
+    "orientation": "portrait",
+    "display": "standalone",
+    "dir": "auto",
+    "lang": "pt-BR",
+    "start_url": "https://asmei.app.br/",
+    "scope": "https://asmei.app.br/",
+    "description": "Orientação para o autocuidado de pessoas com asma",
+    "name": "Asmei",
+    "short_name": "Asmei"
+}

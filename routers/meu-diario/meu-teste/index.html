@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="../../../src/images/icon512_maskable.png" />
+
+    <link rel="manifest" href="../../../manifest.json" />
+    <!-- ios support -->
+    <link rel="apple-touch-icon" href="../../../src/images/icon512_maskable.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#1c0c7a" />
+    <meta name="theme-color" content="#1c0c7a" />
+
+    <link rel="stylesheet" href="../../../global.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <title>Meu Diário</title>
+</head>
+
+<body>
+
+    <header>
+        <div class='container'>
+            <h2>Meu Teste</h2>
+            <p></p>
+        </div>
+    </header>
+    <article id="welcome-page">
+        <p>
+            O GINA – Teste de Controle da Asma ajuda a avaliar como está o controle da asma e identifica pontos que podem ser melhorados no seu cuidado diário.
+            <br>
+            <br>
+            São perguntas simples sobre sua saúde respiratória nos últimos dias ou semanas.
+            <br>
+            <br>
+            Com base nas suas respostas, orientações de autocuidado serão mostradas para te ajudar a respirar melhor e evitar crises.
+        </p>
+        <div class="welcome-card-button">
+            <button class="start-button" onclick="startTest()">Iniciar avaliação</button>
+        </div>
+    </article>
+    <article id="question-page">
+        <h4>Marque as opções que correspondem ao que você sentiu nas últimas 4 semanas.</h4>
+        <div class="question-card">
+            <label class="label-container">
+                <div class="checkbox-wrapper">
+                    <label class="rocker rocker-small">
+                        <input type="checkbox" name="question1" checked="checked">
+                        <span class="switch-left">Sim</span>
+                        <span class="switch-right">Não</span>
+                    </label>
+                </div>
+                Apresentou sintomas diurnos mais que 2 vezes por semana?
+            </label>
+        </div>
+        <div class="question-card">
+            <label class="label-container">
+                <div class="checkbox-wrapper">
+                    <label class="rocker rocker-small">
+                        <input type="checkbox" name="question2" checked="checked">
+                        <span class="switch-left">Sim</span>
+                        <span class="switch-right">Não</span>
+                    </label>
+                </div>
+                Tem despertar noturno por asma?
+            </label>
+        </div>
+        <div class="question-card">
+            <label class="label-container">
+                <div class="checkbox-wrapper">
+                    <label class="rocker rocker-small">
+                        <input type="checkbox" name="question3" checked="checked">
+                        <span class="switch-left">Sim</span>
+                        <span class="switch-right">Não</span>
+                    </label>
+                </div>
+                Uso do medicamento de resgate mais que 2 vezes por semana?
+            </label>
+        </div>
+        <div class="question-card">
+            <label class="label-container">
+                <div class="checkbox-wrapper">
+                    <label class="rocker rocker-small">
+                        <input type="checkbox" name="question4" checked="checked">
+                        <span class="switch-left">Sim</span>
+                        <span class="switch-right">Não</span>
+                    </label>
+                </div>
+                Limitação das atividades por asma?
+            </label>
+        </div>
+        <div class="question-card-button">
+            <button class="button">Enviar formulário</button>
+        </div>
+    </article>
+
+    <article class="voltar-container"></article>
+
+    <!-- The Modal -->
+    <div id="appModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-btn-close">&times;</span>
+                <!-- <h2>Modal Header</h2> -->
+            </div>
+            <div class="modal-body">
+                <!-- dynamic content -->
+
+            </div>
+            <div class="modal-footer">
+                <!-- <h3>Modal Footer</h3> -->
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+<script src="index.js"></script>
+
+</html>

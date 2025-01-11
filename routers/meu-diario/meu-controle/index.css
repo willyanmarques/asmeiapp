@@ -1,0 +1,301 @@
+/* Meu teste page CSS */
+
+#welcome-page {
+  padding: 20px;
+}
+
+#welcome-page p {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  color: #1c0c7a;
+  font-size: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.welcome-card-button {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  background-color: #1c0c7a;
+  /* Green */
+  border: 4px #1c0c7a solid;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 15px;
+  width: 100%;
+}
+
+.welcome-card-button button {
+  background-color: #1c0c7a;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  width: 100%;
+  font-family: "Acme", sans-serif;
+  font-style: normal;
+}
+
+/* The label-container */
+.label-container {
+  display: block;
+  position: relative;
+  /* padding-left: 35px; */
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #1c0c7a;
+}
+
+/* Hide the browser's default checkbox */
+.label-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.label-container:hover input~.checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.label-container input:checked~.checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.label-container input:checked~.checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.label-container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.question-card {
+  font-family: "Acme", sans-serif;
+  font-style: normal;
+  background-color: #FFFFFF;
+  border: 4px #1c0c7a solid;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 15px;
+  width: 100%;
+  color: #1c0c7a;
+  font-size: 20px;
+}
+
+.question-card label {
+  padding-left: 40px;
+  font-size: 20px;
+}
+
+.question-card-button {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  background-color: #04AA6D;
+  /* Green */
+  border: 4px #05754c solid;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 15px;
+  width: 100%;
+}
+
+.button {
+  background-color: #04AA6D;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  width: 100%;
+  font-family: "Acme", sans-serif;
+  font-style: normal;
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+  visibility: hidden;
+  display: none;
+}
+
+.checkbox-wrapper *,
+.checkbox-wrapper ::after,
+.checkbox-wrapper ::before {
+  box-sizing: border-box;
+  margin-bottom: 3px;
+}
+
+.checkbox-wrapper .rocker {
+  display: inline-block;
+  position: relative;
+  /*
+    SIZE OF SWITCH
+    ==============
+    All sizes are in em - therefore
+    changing the font-size here
+    will change the size of the switch.
+    See .rocker-small below as example.
+    */
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #888;
+  width: 7em;
+  height: 4em;
+  overflow: hidden;
+  border-bottom: 0.5em solid #eee;
+}
+
+.checkbox-wrapper .rocker-small {
+  font-size: 1em;
+}
+
+.checkbox-wrapper .rocker::before {
+  content: "";
+  position: absolute;
+  top: 0.5em;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #999;
+  border: 0.5em solid #eee;
+  border-bottom: 0;
+}
+
+.checkbox-wrapper .switch-left,
+.checkbox-wrapper .switch-right {
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5em;
+  width: 3em;
+  transition: 0.2s;
+  user-select: none;
+}
+
+.checkbox-wrapper .switch-left {
+  height: 2.4em;
+  width: 2.75em;
+  left: 0.85em;
+  bottom: 0.4em;
+  background-color: #ddd;
+  transform: rotate(15deg) skewX(15deg);
+}
+
+.checkbox-wrapper .switch-right {
+  right: 0.5em;
+  bottom: 0;
+  background-color: #bd5757;
+  color: #fff;
+}
+
+.checkbox-wrapper .switch-left::before,
+.checkbox-wrapper .switch-right::before {
+  content: "";
+  position: absolute;
+  width: 0.4em;
+  height: 2.45em;
+  bottom: -0.45em;
+  background-color: #ccc;
+  transform: skewY(-65deg);
+}
+
+.checkbox-wrapper .switch-left::before {
+  left: -0.4em;
+}
+
+.checkbox-wrapper .switch-right::before {
+  right: -0.375em;
+  background-color: transparent;
+  transform: skewY(65deg);
+}
+
+.checkbox-wrapper input:checked+.switch-left {
+  background-color: #0084d0;
+  color: #fff;
+  bottom: 0px;
+  left: 0.5em;
+  height: 2.5em;
+  width: 3em;
+  transform: rotate(0deg) skewX(0deg);
+}
+
+.checkbox-wrapper input:checked+.switch-left::before {
+  background-color: transparent;
+  width: 3.0833em;
+}
+
+.checkbox-wrapper input:checked+.switch-left+.switch-right {
+  background-color: #ddd;
+  color: #888;
+  bottom: 0.4em;
+  right: 0.8em;
+  height: 2.4em;
+  width: 2.75em;
+  transform: rotate(-15deg) skewX(-15deg);
+}
+
+.checkbox-wrapper input:checked+.switch-left+.switch-right::before {
+  background-color: #ccc;
+}
+
+/* Keyboard Users */
+.checkbox-wrapper input:focus+.switch-left {
+  color: #333;
+}
+
+.checkbox-wrapper input:checked:focus+.switch-left {
+  color: #fff;
+}
+
+.checkbox-wrapper input:focus+.switch-left+.switch-right {
+  color: #fff;
+}
+
+.checkbox-wrapper input:checked:focus+.switch-left+.switch-right {
+  color: #333;
+}

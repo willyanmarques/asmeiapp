@@ -13,12 +13,12 @@
     <meta name="apple-mobile-web-app-status-bar" content="#1c0c7a" />
     <meta name="theme-color" content="#1c0c7a" />
 
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="../../global.css">
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <title>Asmei</title>
+    <title>Asmei - Registro</title>
 </head>
 
 <body>
@@ -38,12 +38,12 @@
             </header>
             <section class="wrapper">
                 <div class="heading">
-                    <h1 class="text text-large">Login</h1>
-                    <p class="text text-normal">Novo usuário? <span><a href="routers/registro/index.html"
+                    <h1 class="text text-large">Registro de novo usuário</h1>
+                    <!-- <p class="text text-normal">Novo usuário? <span><a href="routers/registro/index.html"
                                 class="text text-links">Criar uma conta</a></span>
-                    </p>
+                    </p> -->
                 </div>
-                <form name="signin" class="form">
+                <form name="register" class="form">
                     <div class="input-control">
                         <label for="email" class="input-label" hidden>E-mail</label>
                         <input type="email" name="email" id="email" class="input-field"
@@ -55,12 +55,14 @@
                             placeholder="Senha" onkeyup="validateFields()">
                     </div>
                     <div class="input-control">
-                        <!-- <a href="#" class="text text-links" onkeyup="validateFields()" onclick="recoverPassword()" disabled>Recuperar a senha</a> -->
-                        <!-- <input type="button" name="submit" class="input-submit" value="Entrar" disabled onclick="login()"> -->
-                        <button type="button" id="btn-recuperar-senha" class="text text-links" onkeyup="validateFields()" onclick="recoverPassword()"
-                            disabled>Recuperar senha</button>
-                        <button type="button" id="btn-entrar" class="input-submit" onclick="login()"
-                            disabled>Entrar</button>
+                        <label for="confirmPassword" class="input-label" hidden>Confirmar senha</label>
+                        <input type="password" name="password" id="confirmPassword" class="input-field"
+                            placeholder="Confirmar senha" onkeyup="validateFields()">
+                    </div>
+                    <div class="input-control">
+                        <button type="button" id="btn-registro" class="input-submit" onclick="registerUser()"
+                            disabled>Registrar</button>
+                        <button type="button" id="btn-login" class="input-submit" onclick="redirectLogin()">Login</button>
                     </div>
                 </form>
             </section>
@@ -74,12 +76,12 @@
     
 </body>
 <!-- Toast -->
-<div style="display: flex; justify-content: center; align-items: center; width: 100%;">
-    <div id="toast"></div>
-</div>
+ <div style="display: flex; justify-content: center; align-items: center; width: 100%;">
+     <div id="toast"></div>
+ </div>
 
 <script src="index.js"></script>
-<script src="loading.js"></script>
+<script src="../../loading.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
 
