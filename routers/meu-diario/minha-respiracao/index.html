@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="../../../src/images/icon512_maskable.png" />
+
+    <link rel="manifest" href="../../../manifest.json" />
+    <!-- ios support -->
+    <link rel="apple-touch-icon" href="../../../src/images/icon512_maskable.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#1c0c7a" />
+    <meta name="theme-color" content="#1c0c7a" />
+
+    <link rel="stylesheet" href="../../../global.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <title>Meu Diário</title>
+</head>
+
+<body>
+
+    <header>
+        <div class='container'>
+            <h2>Minha Respiração</h2>
+            <p></p>
+        </div>
+    </header>
+    <article id="welcome-page">
+        <p>
+            A respiração comprometida dificulta a realização de atividades do dia a dia.
+            <br>
+            <br>
+            Ao sentir falta de ar você pode reconhecer os sinais de piora da asma e agir rapidamente para evitar
+            complicações.
+            <br>
+            <br>
+            Neste teste você pode escolher números de 0 a 10, onde 0 é sem falta de ar e 10 é maior dificuldade de
+            respirar.
+            <br>
+            <br>
+            Em cada número uma orientação de autocuidado lhe será dada.
+        </p>
+        <div class="welcome-card-button">
+            <button class="start-button" onclick="startTest()">INICIAR</button>
+        </div>
+    </article>
+    <article id="question-page">
+        <h4>Aqui, você pode marcar o nível de dificuldade para respirar, de 0 (sem falta de ar) a 10 (máxima dificuldade
+            para respirar).</h4>
+        <br>
+        <h4>Marque agora como você está se sentindo e confira as recomendações específicas para o seu caso.</h4>
+
+        <div class="question-card">
+            
+            <div class="bloco1">
+                <div class="radio-wrapper-1">
+                    <label for="radio-button" class="radio-inline"> 0
+                        <input id="radio-button" type="radio" name="radio-minha-respiracao" value="0">
+                    </label>
+                </div>
+                <div class="radio-wrapper-1">
+                    <label for="radio-button" class="radio-inline"> 1
+                        <input id="radio-button" type="radio" name="radio-minha-respiracao" value="1">
+                    </label>
+                </div>
+                <div class="radio-wrapper-1">
+                    <label for="radio-button" class="radio-inline"> 3
+                        <input id="radio-button" type="radio" name="radio-minha-respiracao" value="3">
+                    </label>
+                </div>
+                <div class="radio-wrapper-1">
+                    <label for="radio-button" class="radio-inline"> 5
+                        <input id="radio-button" type="radio" name="radio-minha-respiracao" value="5">
+                    </label>
+                </div>
+                <div class="radio-wrapper-1">
+                    <label for="radio-button" class="radio-inline"> 7
+                        <input id="radio-button" type="radio" name="radio-minha-respiracao" value="7">
+                    </label>
+                </div>
+                <div class="radio-wrapper-1">
+                    <label for="radio-button" class="radio-inline"> 9
+                        <input id="radio-button" type="radio" name="radio-minha-respiracao" value="9">
+                    </label>
+                </div>
+            </div>
+
+            <div class="gradient"></div>
+
+            <div class="bloco2">
+                <div class="radio-wrapper-1">
+                    <label for="radio-button" class="radio-inline">
+                        <input id="radio-button" type="radio" name="radio-minha-respiracao" value="2"> 2
+                    </label>
+                </div>
+                <div class="radio-wrapper-1">
+                    <label for="radio-button" class="radio-inline">
+                        <input id="radio-button" type="radio" name="radio-minha-respiracao" value="4"> 4
+                    </label>
+                </div>
+                <div class="radio-wrapper-1">
+                    <label for="radio-button" class="radio-inline">
+                        <input id="radio-button" type="radio" name="radio-minha-respiracao" value="6"> 6
+                    </label>
+                </div>
+                <div class="radio-wrapper-1">
+                    <label for="radio-button" class="radio-inline">
+                        <input id="radio-button" type="radio" name="radio-minha-respiracao" value="8"> 8
+                    </label>
+                </div>
+                <div class="radio-wrapper-1">
+                    <label for="radio-button" class="radio-inline">
+                        <input id="radio-button" type="radio" name="radio-minha-respiracao" value="10"> 10
+                    </label>
+                </div>
+            </div>
+    
+        </div>
+
+        
+
+        
+    </article>
+
+    <article class="voltar-container"></article>
+
+    <!-- The Modal -->
+    <div id="appModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-btn-close">&times;</span>
+                <!-- <h2>Modal Header</h2> -->
+            </div>
+            <div class="modal-body">
+                <!-- dynamic content -->
+
+            </div>
+            <div class="modal-footer">
+                <!-- <h3>Modal Footer</h3> -->
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+<script src="index.js"></script>
+
+</html>

@@ -81,6 +81,9 @@ function handlerClickCard() {
                     case 'meu-controle':
                         $(location).prop('href', '/routers/meu-diario/meu-controle/index.html');
                         break;
+                    case 'meu-cansaco':
+                        $(location).prop('href', '/routers/meu-diario/minha-respiracao/index.html');
+                        break;
                 }
             }
         });
