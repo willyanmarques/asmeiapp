@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="../../../src/images/icon512_maskable.png" />
+
+    <link rel="manifest" href="../../../manifest.json" />
+    <!-- ios support -->
+    <link rel="apple-touch-icon" href="../../../src/images/icon512_maskable.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#1c0c7a" />
+    <meta name="theme-color" content="#1c0c7a" />
+
+    <link rel="stylesheet" href="../../../global.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <title>Meu Diário</title>
+</head>
+
+<body>
+
+    <header>
+        <div class='container'>
+            <h2>Minhas Crises</h2>
+        </div>
+    </header>
+    <article id="welcome-page">
+        <p style="text-align: center;">
+            Lembre-se: o autocuidado é um passo importante para viver bem com asma.
+            <br>
+            <br>
+            Mas ele deve andar de mãos dadas com o acompanhamento profissional e o uso correto dos medicamentos
+            indicados para você.
+            <br>
+            <br>
+            Juntos, esses cuidados ajudam a melhorar sua qualidade de vida e manter sua saúde no controle.
+            <br>
+            <br>
+            <br>
+            <br>
+            Vamos começar?
+            <img class="btn-saber-mais" style="position:absolute;margin-left:15px;margin-top:-15px;cursor:pointer;" src="./icons/plus.png" width="60px">
+        </p>
+        <div class="welcome-card-button">
+            <button class="start-button" onclick="startTest()">INICIAR</button>
+        </div>
+    </article>
+    <article id="question-page">
+        <h4>Marque as opções que correspondem ao que você sentiu.</h4>
+        <div class="question-card">
+            <label class="label-container">
+                <div class="checkbox-wrapper">
+                    <label class="rocker rocker-small">
+                        <input type="checkbox" name="question1">
+                        <span class="switch-left">Sim</span>
+                        <span class="switch-right">Não</span>
+                    </label>
+                </div>
+                TIVE TOSSE
+            </label>
+        </div>
+        <div class="question-card">
+            <label class="label-container">
+                <div class="checkbox-wrapper">
+                    <label class="rocker rocker-small">
+                        <input type="checkbox" name="question2">
+                        <span class="switch-left">Sim</span>
+                        <span class="switch-right">Não</span>
+                    </label>
+                </div>
+                FIQUEI COM FALTA DE AR
+            </label>
+        </div>
+        <div class="question-card">
+            <label class="label-container">
+                <div class="checkbox-wrapper">
+                    <label class="rocker rocker-small">
+                        <input type="checkbox" name="question3">
+                        <span class="switch-left">Sim</span>
+                        <span class="switch-right">Não</span>
+                    </label>
+                </div>
+                SENTI APERTO NO PEITO
+            </label>
+        </div>
+        <div class="question-card">
+            <label class="label-container">
+                <div class="checkbox-wrapper">
+                    <label class="rocker rocker-small">
+                        <input type="checkbox" name="question4">
+                        <span class="switch-left">Sim</span>
+                        <span class="switch-right">Não</span>
+                    </label>
+                </div>
+                TIVE CHIADO NO PEITO
+            </label>
+        </div>
+        <div class="question-card">
+            <label class="label-container">
+                <div class="checkbox-wrapper">
+                    <label class="rocker rocker-small">
+                        <input type="checkbox" name="question5">
+                        <span class="switch-left">Sim</span>
+                        <span class="switch-right">Não</span>
+                    </label>
+                </div>
+                ACORDEI DURANTE À NOITE
+            </label>
+        </div>
+        <div class="question-card">
+            <label class="label-container">
+                <div class="checkbox-wrapper">
+                    <label class="rocker rocker-small">
+                        <input type="checkbox" name="question6">
+                        <span class="switch-left">Sim</span>
+                        <span class="switch-right">Não</span>
+                    </label>
+                </div>
+                USEI REMÉDIO PARA CONTROLAR A ASMA
+            </label>
+        </div>
+        <div class="question-card">
+            <label class="label-container">
+                <div class="checkbox-wrapper">
+                    <label class="rocker rocker-small">
+                        <input type="checkbox" name="question7">
+                        <span class="switch-left">Sim</span>
+                        <span class="switch-right">Não</span>
+                    </label>
+                </div>
+                USEI REMÉDIO PARA ALIVIAR A ASMA
+            </label>
+        </div>
+        <div class="question-card">
+            <label class="label-container">
+                <div class="checkbox-wrapper">
+                    <label class="rocker rocker-small">
+                        <input type="checkbox" name="question8">
+                        <span class="switch-left">Sim</span>
+                        <span class="switch-right">Não</span>
+                    </label>
+                </div>
+                FUI PARA A EMERGÊNCIA
+            </label>
+        </div>
+    </article>
+
+    <article class="voltar-container"></article>
+
+    <!-- The Modal -->
+    <div id="appModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-btn-close">&times;</span>
+                <!-- <h2>Modal Header</h2> -->
+            </div>
+            <div class="modal-body">
+                <!-- dynamic content -->
+
+            </div>
+            <div class="modal-footer">
+                <!-- <h3>Modal Footer</h3> -->
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+<script src="index.js"></script>
+
+</html>

@@ -1,0 +1,260 @@
+/* Meu teste page CSS */
+header h2 {
+  font-size: 50px;
+}
+
+#welcome-page {
+  padding: 20px;
+}
+
+#welcome-page p {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  color: #1c0c7a;
+  font-size: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.welcome-card-button {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  background-color: #1c0c7a;
+  /* Green */
+  border: 4px #1c0c7a solid;
+  border-radius: 20px;
+  padding: 15px;
+  margin: 15px;
+  width: 100%;
+}
+
+.welcome-card-button button {
+  background-color: #1c0c7a;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  width: 100%;
+  font-family: "Acme", sans-serif;
+  font-style: normal;
+}
+
+.question-card {
+  font-family: "Acme", sans-serif;
+  font-style: normal;
+  /* background-color: #FFFFFF; */
+  /* border: 4px #1c0c7a solid;
+   */
+  border-radius: 20px;
+  display: flex;
+   flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  
+  /* flex-direction: row; */
+	/* justify-content: flex-start;  */
+  /* break-before: always; */
+  /* margin: 0 0 3em 0; */
+  padding: 20px;
+  margin: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+.question-card-button {
+  background-color: #1c0c7a;
+  /* Green */
+  border: 4px #1c0c7a solid;
+  border-radius: 20px;
+  margin: 15px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.question-card-button button {
+  background: #1c0c7a;
+  border-radius: 20px;
+  padding: 20px;
+  width: 100%;
+  border: none;
+  color: #ffffff;
+  font-style: normal;
+  font-size: x-large;
+  font-family: "Acme", sans-serif;
+  cursor: pointer;
+}
+
+#question-page h4 {
+  /* padding-left: 20px; */
+  color: #1c0c7a;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#question-page p {
+  font-family: "Acme", sans-serif;
+  font-size: large;
+}
+
+#screen-explanation {
+  width: 100%;
+  text-align: center;
+  color: #1c0c7a;
+  font-family: "Lato", sans-serif;
+}
+
+.wrapper{
+  position: relative;
+  max-width: 430px;
+  width: 100%;
+  /* background: #fff; */
+  padding: 0 34px 0 34px;
+  border-radius: 6px;
+  /* box-shadow: 0 5px 10px rgba(0,0,0,0.2); */
+}
+.wrapper h2{
+  position: relative;
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+.wrapper h2::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 28px;
+  border-radius: 12px;
+  background: #1c0c7a;
+}
+.wrapper form{
+  margin-top: 30px;
+}
+.wrapper form .input-box-textarea{
+  margin: 18px 0;
+}
+.wrapper form .input-box{
+  height: 52px;
+  margin: 18px 0;
+}
+form .input-box input, textarea {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #333;
+  border: 1.5px solid #C7BEBE;
+  border-bottom-width: 2.5px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+textarea {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
+.input-box input:focus,
+.input-box input:valid,
+textarea{
+  border-color: #1c0c7a;
+}
+form .policy{
+  display: flex;
+  align-items: center;
+}
+form h3{
+  color: #707070;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+.input-box.button input{
+  color: #fff;
+  letter-spacing: 1px;
+  border: none;
+  background: #1c0c7a;
+  cursor: pointer;
+}
+.input-box.button input:hover{
+  background: #1c0c7a;
+}
+form .text h3{
+ color: #333;
+ width: 100%;
+ text-align: center;
+}
+form .text h3 a{
+  color: #1c0c7a;
+  text-decoration: none;
+}
+form .text h3 a:hover{
+  text-decoration: underline;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+body{
+  min-height: 100vh;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  /* background: #4070f4; */
+}
+
+.span-aux {
+  font-family: 'Lato', sans-serif;
+  text-align: left;
+  color: #1c0c7a;
+}
+
+.anotations-section {
+  padding: 15px;
+  max-width: 100%;
+}
+
+.collapsible {
+  background-color: #1c0c7a;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: small;
+}
+
+.active, .collapsible:hover {
+  background-color: #1c0c7a;
+}
+
+.content {
+  padding: 15px;
+  display: none;
+  overflow: hidden;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-size: small;
+  text-transform: uppercase;
+  word-break: break-all;
+}

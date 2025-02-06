@@ -1,5 +1,5 @@
 function showLoading() {
-    console.log("showLoading")
+    console.log("showLoading");
 
     const loadingContainer = document.createElement("div");
     loadingContainer.classList.add("loading");
@@ -14,6 +14,7 @@ function showLoading() {
 }
 
 function hideLoading() {
+    console.log("hideLoading");
     const loadingContainer = document.getElementsByClassName("loading")[0];
     const loader = document.getElementsByClassName("loader")[0];
 

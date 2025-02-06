@@ -56,7 +56,7 @@ function handlerLoadPosts() {
         getPostsByCategotyId(category[0].id).done(function (posts) {
 
             posts.forEach(post => {
-                console.log(JSON.stringify(post))
+                //console.log(JSON.stringify(post))
                 let obj = {
                     id: post.id,
                     slug: post.slug.split("_")[1],

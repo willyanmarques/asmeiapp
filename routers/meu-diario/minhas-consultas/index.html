@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="../../../src/images/icon512_maskable.png" />
+
+    <link rel="manifest" href="../../../manifest.json" />
+    <!-- ios support -->
+    <link rel="apple-touch-icon" href="../../../src/images/icon512_maskable.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#1c0c7a" />
+    <meta name="theme-color" content="#1c0c7a" />
+
+    <link rel="stylesheet" href="../../../global.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.min.js"></script>
+    <title>Meu Diário</title>
+</head>
+
+<body>
+
+    <header>
+        <div class='container'>
+            <h2>Minhas Consultas</h2>
+            <p></p>
+        </div>
+    </header>
+    <article id="welcome-page">
+        <p style="text-align: center;">Anote aqui e lembre de suas consultas!</p>
+        <div class="welcome-card-button">
+            <button class="start-button" onclick="anotar()" style="text-transform: uppercase;">Anotar nova
+                consulta</button>
+        </div>
+        <div class="welcome-card-button">
+            <button class="start-button" onclick="verAnotacoes()" style="text-transform: uppercase;">Ver consultas
+                agendadas</button>
+        </div>
+    </article>
+    <article id="question-page">
+        <!-- <div class="question-card"> -->
+
+        <div class="wrapper">
+            <form id="form-consultas" action="#">
+                <p class="span-aux">Data?</p>
+                <div class="input-box">
+                    <input type="date" id="dataEvento" placeholder="Data" value="">
+                </div>
+                <p class="span-aux">Horário?</p>
+                <div class="input-box">
+                    <input type="time" id="horario" placeholder="Horário" value="">
+                </div>
+                <p class="span-aux">Nome do profissional?</p>
+                <div class="input-box">
+                    <input type="text" id="nomeProf" placeholder="Ex: Dr. Paulo" value="">
+                </div>
+                <p class="span-aux">Local da consulta?</p>
+                <div class="input-box">
+                    <input type="text" id="local" placeholder="Ex: Hospital do Recife" value="">
+                </div>
+                <p class="span-aux">Dúvidas para perguntar na consulta?</p>
+                <div class="input-box-textarea">
+                    <textarea type="textarea" id="duvidas" rows="8" placeholder="Anote aqui..." value=""></textarea>
+                </div>
+            </form>
+        </div>
+
+
+        <div class="question-card-button">
+            <button class="button save-button">Salvar</button>
+        </div>
+
+        <!-- </div> -->
+
+    </article>
+
+    <article id="anotations-page">
+
+        <div class="anotations-section">
+        </div>
+
+        <!-- <div class="question-card-button">
+            <button class="button delete-button">Excluir consultas</button>
+        </div> -->
+
+    </article>
+
+    <article class="voltar-container"></article>
+
+</body>
+<script src="index.js"></script>
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>
+
+</html>

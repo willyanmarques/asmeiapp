@@ -371,3 +371,11 @@ video {
     from {bottom: 30px; opacity: 1;}
     to {bottom: 0; opacity: 0;}
   }
+
+  .card-voltar {
+    margin-top: -24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }

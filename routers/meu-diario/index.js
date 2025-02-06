@@ -11,9 +11,9 @@ if ("serviceWorker" in navigator) {
 let WP_POSTS = [];
 
 function handlerLoadPosts() {
-
     $.get("https://site.asmei.app.br/wp-json/wp/v2/categories/")
-        .done(function (categories) {
+    .done(function (categories) {
+            showLoading();
 
             let categoty_home_id = 0;
 
@@ -36,7 +36,7 @@ function handlerLoadPosts() {
                         };
                         WP_POSTS.push(obj);
                     });
-
+                    hideLoading();
                     WP_POSTS.sort((a, b) => a.order > b.order ? 1 : -1); //ordernando array p/ garantir icones menu na posicao correta
 
                     WP_POSTS.forEach(post => {
@@ -62,7 +62,7 @@ function handlerLoadPosts() {
                     )
 
                 });
-
+                
         });
 }
 
@@ -83,6 +83,15 @@ function handlerClickCard() {
                         break;
                     case 'meu-cansaco':
                         $(location).prop('href', '/routers/meu-diario/minha-respiracao/index.html');
+                        break;
+                    case 'meu-tratamento':
+                        $(location).prop('href', '/routers/meu-diario/meu-tratamento/index.html');
+                        break;
+                    case 'minhas-consultas':
+                        $(location).prop('href', '/routers/meu-diario/minhas-consultas/index.html');
+                        break;
+                    case 'minhas-crises':
+                        $(location).prop('href', '/routers/meu-diario/minhas-crises/index.html');
                         break;
                 }
             }
